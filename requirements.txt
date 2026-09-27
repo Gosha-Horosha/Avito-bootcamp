@@ -1,0 +1,244 @@
+# Зависимости проекта (сгенерировано из uv.lock: uv export --no-dev --no-hashes)
+# Установка: pip install -r requirements.txt   (или: uv sync)
+# Для CPU-only замените torch==2.11.0+cu128 на torch==2.11.0 и уберите строку --extra-index-url
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+annotated-doc==0.0.5
+    # via typer
+anyio==4.14.2
+    # via httpx
+bm25s==0.3.11
+    # via avito-candidate-generation
+certifi==2026.7.22
+    # via
+    #   httpcore
+    #   httpx
+click==8.5.0
+    # via huggingface-hub
+cloudpickle==3.1.2
+    # via joblib
+colorama==0.4.6 ; sys_platform == 'win32'
+    # via
+    #   tqdm
+    #   typer
+contourpy==1.3.2 ; python_full_version < '3.11'
+    # via matplotlib
+contourpy==1.3.3 ; python_full_version >= '3.11'
+    # via matplotlib
+cuda-bindings==12.9.9 ; sys_platform == 'linux'
+    # via torch
+cuda-pathfinder==1.8.0 ; sys_platform == 'linux'
+    # via cuda-bindings
+cuda-toolkit==12.8.1 ; sys_platform == 'linux'
+    # via torch
+cycler==0.12.1
+    # via matplotlib
+dawg-python==0.7.2
+    # via pymorphy2
+docopt==0.6.2
+    # via pymorphy2
+exceptiongroup==1.3.1 ; python_full_version < '3.11'
+    # via anyio
+filelock==3.32.5
+    # via
+    #   huggingface-hub
+    #   torch
+fonttools==4.64.0
+    # via matplotlib
+fsspec==2026.7.0
+    # via
+    #   huggingface-hub
+    #   torch
+h11==0.16.0
+    # via httpcore
+hf-xet==1.6.0 ; platform_machine == 'AMD64' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'
+    # via huggingface-hub
+httpcore==1.0.9
+    # via httpx
+httpx==0.28.1
+    # via huggingface-hub
+huggingface-hub==1.33.0
+    # via
+    #   sentence-transformers
+    #   tokenizers
+    #   transformers
+idna==3.19
+    # via
+    #   anyio
+    #   httpx
+jinja2==3.1.6
+    # via torch
+joblib==1.6.0
+    # via scikit-learn
+kiwisolver==1.5.1
+    # via matplotlib
+markdown-it-py==4.2.0
+    # via rich
+markupsafe==3.0.3
+    # via jinja2
+matplotlib==3.10.9 ; python_full_version < '3.11'
+    # via avito-candidate-generation
+matplotlib==3.11.1 ; python_full_version >= '3.11'
+    # via avito-candidate-generation
+mdurl==0.1.2
+    # via markdown-it-py
+mpmath==1.3.0
+    # via sympy
+networkx==3.4.2 ; python_full_version < '3.11'
+    # via torch
+networkx==3.6.1 ; python_full_version >= '3.11'
+    # via torch
+numpy==2.2.6 ; python_full_version < '3.11'
+    # via
+    #   avito-candidate-generation
+    #   bm25s
+    #   contourpy
+    #   matplotlib
+    #   pandas
+    #   scikit-learn
+    #   scipy
+    #   sentence-transformers
+    #   transformers
+numpy==2.4.6 ; python_full_version >= '3.11'
+    # via
+    #   avito-candidate-generation
+    #   bm25s
+    #   contourpy
+    #   matplotlib
+    #   pandas
+    #   scikit-learn
+    #   scipy
+    #   sentence-transformers
+    #   transformers
+nvidia-cublas-cu12==12.8.4.1 ; sys_platform == 'linux'
+    # via
+    #   cuda-toolkit
+    #   nvidia-cudnn-cu12
+    #   nvidia-cusolver-cu12
+nvidia-cuda-cupti-cu12==12.8.90 ; sys_platform == 'linux'
+    # via cuda-toolkit
+nvidia-cuda-nvrtc-cu12==12.8.93 ; sys_platform == 'linux'
+    # via cuda-toolkit
+nvidia-cuda-runtime-cu12==12.8.90 ; sys_platform == 'linux'
+    # via cuda-toolkit
+nvidia-cudnn-cu12==9.19.0.56 ; sys_platform == 'linux'
+    # via torch
+nvidia-cufft-cu12==11.3.3.83 ; sys_platform == 'linux'
+    # via cuda-toolkit
+nvidia-cufile-cu12==1.13.1.3 ; sys_platform == 'linux'
+    # via cuda-toolkit
+nvidia-curand-cu12==10.3.9.90 ; sys_platform == 'linux'
+    # via cuda-toolkit
+nvidia-cusolver-cu12==11.7.3.90 ; sys_platform == 'linux'
+    # via cuda-toolkit
+nvidia-cusparse-cu12==12.5.8.93 ; sys_platform == 'linux'
+    # via
+    #   cuda-toolkit
+    #   nvidia-cusolver-cu12
+nvidia-cusparselt-cu12==0.7.1 ; sys_platform == 'linux'
+    # via torch
+nvidia-nccl-cu12==2.28.9 ; sys_platform == 'linux'
+    # via torch
+nvidia-nvjitlink-cu12==12.8.93 ; sys_platform == 'linux'
+    # via
+    #   cuda-toolkit
+    #   nvidia-cufft-cu12
+    #   nvidia-cusolver-cu12
+    #   nvidia-cusparse-cu12
+nvidia-nvshmem-cu12==3.4.5 ; sys_platform == 'linux'
+    # via torch
+nvidia-nvtx-cu12==12.8.90 ; sys_platform == 'linux'
+    # via cuda-toolkit
+packaging==26.3
+    # via
+    #   huggingface-hub
+    #   matplotlib
+    #   transformers
+pandas==2.3.3 ; python_full_version < '3.11'
+    # via avito-candidate-generation
+pandas==3.0.5 ; python_full_version >= '3.11'
+    # via avito-candidate-generation
+pillow==12.3.0
+    # via matplotlib
+pyarrow==25.0.1
+    # via avito-candidate-generation
+pygments==2.21.0
+    # via rich
+pymorphy2==0.9.1
+    # via avito-candidate-generation
+pymorphy2-dicts-ru==2.4.417127.4579844
+    # via
+    #   avito-candidate-generation
+    #   pymorphy2
+pyparsing==3.3.2
+    # via matplotlib
+python-dateutil==2.9.0.post0
+    # via
+    #   matplotlib
+    #   pandas
+pytz==2026.3.post1 ; python_full_version < '3.11'
+    # via pandas
+pyyaml==6.0.3
+    # via
+    #   huggingface-hub
+    #   transformers
+regex==2026.9.10
+    # via transformers
+rich==15.0.0
+    # via typer
+safetensors==0.8.0
+    # via transformers
+scikit-learn==1.7.2
+    # via
+    #   avito-candidate-generation
+    #   sentence-transformers
+scipy==1.15.3
+    # via
+    #   avito-candidate-generation
+    #   scikit-learn
+    #   sentence-transformers
+sentence-transformers==6.1.0
+    # via avito-candidate-generation
+setuptools==80.9.0
+    # via
+    #   avito-candidate-generation
+    #   torch
+shellingham==1.5.4
+    # via typer
+six==1.17.0
+    # via python-dateutil
+sympy==1.14.0
+    # via torch
+threadpoolctl==3.7.0
+    # via scikit-learn
+tokenizers==0.23.2
+    # via
+    #   sentence-transformers
+    #   transformers
+tomli==2.4.1 ; python_full_version < '3.11'
+    # via huggingface-hub
+torch==2.11.0+cu128
+    # via
+    #   avito-candidate-generation
+    #   sentence-transformers
+tqdm==4.70.0
+    # via
+    #   avito-candidate-generation
+    #   huggingface-hub
+    #   sentence-transformers
+    #   transformers
+transformers==5.17.0
+    # via sentence-transformers
+triton==3.6.0 ; sys_platform == 'linux'
+    # via torch
+typer==0.27.2
+    # via transformers
+typing-extensions==4.16.0
+    # via
+    #   anyio
+    #   exceptiongroup
+    #   huggingface-hub
+    #   sentence-transformers
+    #   torch
+tzdata==2026.3 ; python_full_version < '3.11' or sys_platform == 'emscripten' or sys_platform == 'win32'
+    # via pandas

@@ -1,0 +1,45 @@
+[project]
+name = "avito-candidate-generation"
+version = "0.1.0"
+description = "Candidate generation (Recall@50) для поиска услуг Avito: BM25 + e5 + локация/гео + микрокатегории"
+readme = "README.md"
+authors = [
+    { name = "Gosha-Horosha", email = "khoroshcha2004@mail.ru" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "bm25s>=0.3.11",
+    "matplotlib>=3.10.9",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "pyarrow>=25.0.1",
+    "pymorphy2==0.9.1",
+    "pymorphy2-dicts-ru>=2.4.417127.4579844",
+    "scikit-learn==1.7.2",
+    "scipy==1.15.3",
+    "sentence-transformers>=6.1.0",
+    "setuptools==80.9.0",
+    "torch==2.11.0",
+    "tqdm>=4.70.0",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.build-backend]
+module-name = "avito_cg"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "notebook>=7.6.2",
+]

@@ -1,0 +1,30 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large local data and model artifacts (not versioned)
+dataset/
+data/
+220/
+artifacts/
+outputs/
+
+# Другой проект (bag counter, CV) — хранится локально, не версионируется
+_other_bag_counter/
+
+# Сабмит генерируется скриптом
+answer.csv
+
+# IDE
+.idea/
+.vscode/
