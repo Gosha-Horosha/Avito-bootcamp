@@ -28,3 +28,6 @@ answer.csv
 # IDE
 .idea/
 .vscode/
+answer_v*.csv
+submissions/
+catboost_info/
